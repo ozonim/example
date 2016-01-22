@@ -1,0 +1,58 @@
+﻿<!DOCTYPE>
+<html>
+<head>
+    <title></title>
+
+</head>
+<body>
+   
+    <script>
+        /*
+   Создайте 3 переменные   x = 6, y = 15, и z = 4:
+     Выполните и отобразите результат следующих операций для этих переменных:
+     · x += y - x++ * z ;
+     · z = -- x - y * 5 ;
+     · y /= x + 5 % z ;
+     · z = x++ + y * 5 ;
+     · x = y - x++ * z ;
+  */
+        var x = 6;
+        var y = 15; 
+        var z = 4;
+        var rez;
+        var res;
+        x++;
+        rez = x * z;
+        res = x + y;
+        //res -= rez;
+        document.write(" x += y - x++ * z =  " + res + "<hr />");  // 11111
+        rez = 0;
+        res = 0;
+        x = 6;
+        rez = y * 5; // 75
+        res = --x - rez; // -70
+        document.write(" z = -- x - y * 5  =  " + res + "<hr />");  //22222
+        res = 0;
+        rez = 0;
+        x = 6;
+        rez = y / x;
+        res = 5 % z;
+        res += rez;
+        document.write("y /= x + 5 % z  =  " + res + "<hr />");  //3333
+        res = 0;
+        rez = 0;
+        res = y * 5;
+        x++;
+        rez = x + res;
+        document.write(" z = x++ + y * 5 =  " + rez + "<hr />");  //4444
+        res = 0;
+        rez = 0;
+        x = 6;
+        x++;
+        rez = x * z;
+        res = y - rez;
+
+        document.write("x = y - x++ * z =  " + res + "<hr />");  //5555
+    </script>
+</body>
+</html>
