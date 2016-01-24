@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+ <head>
+    <title></title>
+ </head>
+ <body>
+     <script>
+        'use strict';
+         var od = "od";
+         var hv = "hv";
+         var login = prompt('Введите Логин');
+         if (login == od ) {
+         var parol = prompt('Введите Пароль');
+        } 
+          else if (login == null) {     //Отмена
+          alert('Вход отменён');
+        }   
+           else if (login !== od) {     //Другое
+           alert('Я Вас незнаю');
+        } 
+           if (parol == hv) {
+           alert('Добро Пожаловать');
+         }
+           else if (parol == null) {
+           alert('Вход отменён');    
+        }
+           else if (parol !== hv) {
+           alert('Пароль неверен!');  
+        }  
+        
+     </script>
+ </body>
+</html>
