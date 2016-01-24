@@ -6,15 +6,14 @@
  </head>
  <body>
      <script>
-     'use strict';
-     var age = prompt('возраст?', 18);
-     var message = (age < 3) ? 'Здравствуй, малыш!' :
-       (age < 18) ? 'Привет!' :
-       (age < 100) ? 'Здравствуйте!' :
-       (age < 200) ? 'Здарова!' :
-       'Какой необычный возраст!';
-
-     alert(message);
+         'use strict';
+         var name = prompt("«Каково «официальное» название JavaScript?».");
+         if (name == "EcmaScript"){
+         alert('Верно!');
+         }
+         else {
+             alert("Не знаете? «EcmaScript»!»");
+         }
      </script>
  </body>
 </html>
