@@ -7,18 +7,19 @@
      <script>
         'use strict';
          var login = prompt('Введите Логин');
-         if (login == null) {
-             alert('Я вас не знаю');
-             
-         } else if  (login == "Админ" ) {
+         if (login == "Админ" ) {
              var parol = prompt('Введите Пароль');
+        } else if (login == null) {
+             alert('Вход отменён');
 
          } else if (parol == "Чёрный Властелин") {
              alert('Добро Пожаловать');
 
          } else {
-             alert('Вход отменён');
+             alert('Я Вас незнаю');
          }
      </script>
  </body>
 </html>
+(parol == null) {
+             alert('Я вас не знаю');
