@@ -6,10 +6,25 @@
  <body>
      <script>
          'use strict';
-         for (var i = 0; i < 10; i++) {
-              if (i % 2) continue;
-              alert(i);
-         }
+         var i = 0;
+         while (true) {
+             var nUmber = +prompt("Введите число больше 100");
+             if (!nUmber) {
+                 alert("Good by!");
+                 break;
+             } else if (nUmber < 100) {
+                 alert("Не верно, попробуйте еще раз!");
+                 continue;
+             } else {
+                 alert("Спасибо " + nUmber);
+                 var oK = confirm("Хотите еще раз ?");
+                 if (oK) {
+                     continue;
+                 } else {
+                     break;
+                 }
+                 }
+              }
        </script>
  </body>
 </html>
